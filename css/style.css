@@ -1,0 +1,106 @@
+body {
+    background-color: #2fe5bc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+#create-note-btn {
+    font-family: Chilanka, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 40vw;
+    border: #060365 0.2em solid;
+    border-radius: 30em;
+    padding: 0.15em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0377e0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#create-note-btn img {
+    width: 2em;
+    height: 2em;
+}
+
+header h1 {
+    font-family: Chilanka, monospace;
+    width: 45vw;
+    color: #ffffff;
+    margin-left: 1.5em;
+}
+
+#logo {
+    width: 7em;
+    /*height: 7em;*/
+    /*filter: invert(99%) sepia(9%) saturate(2%) hue-rotate(28deg) brightness(104%) contrast(100%);*/
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.note {
+    border: #060365 0.2em solid;
+    width: 17.8125em;
+    border-radius: 0.3em;
+    height: 13.75em;
+    /*padding: 0.25em;*/
+    margin: 0.3em;
+    background-color: #3997f6;
+}
+
+.note-header {
+    margin: 0.5em 0 0.2em 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+}
+
+.remove-note-btn {
+    width: 3em;
+    height: 3em;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.remove-note-btn:hover {
+    transition-timing-function: ease;
+    transition-duration: 0.8s;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    filter: invert(35%) sepia(39%) saturate(7856%) hue-rotate(352deg) brightness(67%) contrast(122%);
+}
+textarea {
+    margin: 0.3em;
+    width: 22.9em;
+    max-width: 22.9em;
+    height: 11.8em;
+    max-height: 11.8em;
+    color: #060365;
+    /*padding: 0.7em;*/
+}
+
+input {
+    color: #060365;
+    font-size: 18px;
+    width: 11.25em;
+}
